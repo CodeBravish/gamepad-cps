@@ -2,7 +2,7 @@ const DISPLAY_UPDATE = 100
 const POLL_TIME = 1
 
 function clicksPerSecond(startTime, clicks) {
-    return clicks > 1 ? clicks / ((new Date() - startTime) / 1000) : 0.0
+    return clicks > 0 ? clicks / ((new Date()) - startTime) * 1000 : 0.0
 }
 
 function buttonPressed(button) {
@@ -53,6 +53,7 @@ window.addEventListener("gamepadconnected", (e) => {
         if (
             new Date() - lastClickDate >
             (1 / clicksPerSecond(startInterval, clicks)) * 2718
+			|| new Date() - lastClickDate > 5000
         ) {
             isTimeOut = true
             clicks = 0
