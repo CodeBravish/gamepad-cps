@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gamepad CPS</title>
+        <script src="./app.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1 title="Made by Bravish">Gamepad CPS</h1>
+            <div>
+                <span class="gp-connection-state">❌Gamepad Not Connected</span>
+                <span>| button:</span>
+                <select name="button" id="button-select">
+                    <option value="0">Cross</option>
+                    <option value="1">Circle</option>
+                    <option value="2">Square</option>
+                    <option value="3">Triangle</option>
+                    <option value="12">D_up</option>
+                    <option value="13">D_down</option>
+                    <option value="14">D_left</option>
+                    <option value="15">D_right</option>
+                    <option value="4">L1</option>
+                    <option value="5">R1</option>
+                    <option value="6">L2</option>
+                    <option value="7">R2</option>
+                    <option value="10">L3</option>
+                    <option value="11">R3</option>
+                    <option value="8">Select</option>
+                    <option value="9">Start</option>
+                    <option value="16">Guide</option>
+                </select>
+            </div>
+            <br />
+            <p class="cps">
+                Clicks Per Second:
+                <br />
+                <span class="cps-value">0.00</span>
+            </p>
+        </div>
+    </body>
+</html>
